@@ -16,14 +16,14 @@ public class FirstLabApplication implements CommandLineRunner {
     @Autowired
     private List<String> beanList;
     public static void main(String[] args) {
-System.out.println("Begin of main :");
+        System.out.println("Begin of main :");
         SpringApplication.run(FirstLabApplication.class, args);
         System.out.println("End of main");
     }
 
     @Override
     public void run (String... args) throws Exception{
-         System.out.println(beanList.get(0));
+        System.out.println(beanList.get(0));
         System.out.println("Hello from spring boot!");
         System.out.println(beanList.get(1));
     }
